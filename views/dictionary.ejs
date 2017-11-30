@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TAO: Dictionary</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='/css/bootstrap.css' />
+  </head>
+  <body>
+    <%- include nav %>
+    <h1>Dictionary Function</h1>
+    <p>Basic: search up in dictionary. <br>
+        Advanced: highlight to search.
+    </p>
+    
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input id="search-word" type="text" class="form-control" autocomplete="off" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button id="search-button" class="btn btn-default" type="button" 
+            onclick="getDef(document.getElementById('search-word').value);">
+            Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 id="def-title" class="panel-title">Panel title</h3>
+        </div>
+        <div id="def-body" class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <script src="/javascripts/dictionary.js"></script>
+    <script src="/javascripts/cors_request.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
