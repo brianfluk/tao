@@ -11,8 +11,8 @@ router.get('/index', function(req, res, next) {
 router.get('/dictionary', function(req, res, next) {
   res.render('dictionary');
 });
-router.get('/extension2', function(req, res, next) {
-  res.render('extension2');
+router.get('/notepad', function(req, res, next) {
+  res.render('notepad');
 });
 router.get('/extension3', function(req, res, next) {
   res.render('extension3');
