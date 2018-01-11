@@ -10,6 +10,7 @@ let request = require('request');
 
 function getDef(word) {
     let query = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/';
+    alert("hi");
     request.get(query, function(error, response, body) {
         if (error) {
             return error;

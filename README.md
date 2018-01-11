@@ -13,3 +13,6 @@ To run:
 * Go the the directory
 * "npm install"
 * "npm start"
+
+When working with this:
+* Do NOT push node_modules/ -- this may or may not create issues (or just be annoying, idk heard sth about this)
