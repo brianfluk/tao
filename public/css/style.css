@@ -1,6 +1,32 @@
-body {
+h1{
+	padding-top: 70px;
+	text-align: center;
+	font: 14px "Lucida Sans Unicode", Lucida Grande, Arial, sans-serif;
+	font-weight: bold;
+	/*background-color: #9DE3FF;*/
+	color: #001C27;
+
+}
+
+p{
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font: 14px "Lucida Sans Unicode", Lucida Grande, Arial, sans-serif;
+  font-weight: normal;
+  /*background-color: #9DE3FF;*/
+  color:#001C27;
+}
+
+body{
+  font: 14px "Lucida Sans Unicode", Lucida Grande, Arial, sans-serif;
+  font-weight: normal;
+  /*background-color: #9DE3FF;*/
+  color:#001C27;
+}
+
+div{
+	/*background-color: #9DE3FF;*/
+	background-clip: border-box;
 }
 
 a {

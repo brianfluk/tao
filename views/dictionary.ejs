@@ -8,10 +8,8 @@
   </head>
   <body>
     <%- include nav %>
-    <h1>Dictionary Function</h1>
-    <p>Basic: search up in dictionary. <br>
-        Advanced: highlight to search.
-    </p>
+    <h1>Dictionary</h1>
+    <p>Basic: Type the word you want defined in the text box below. Click the 'Search' button to search. </p>
     
     <div class="row">
       <div class="col-lg-6">
@@ -20,7 +18,7 @@
           <span class="input-group-btn">
             <button id="search-button" class="btn btn-default" type="button" 
             onclick="getDef(document.getElementById('search-word').value);">
-            Go!</button>
+            Search</button>
           </span>
         </div><!-- /input-group -->
       </div><!-- /.col-lg-6 -->
@@ -30,10 +28,10 @@
       <div class="col-md-6">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 id="def-title" class="panel-title">Panel title</h3>
+          <h3 id="def-title" class="panel-title">Word searched for appears here</h3>
         </div>
         <div id="def-body" class="panel-body">
-          Panel content
+          Word definition and other content appears here.
         </div>
       </div>
     </div>
